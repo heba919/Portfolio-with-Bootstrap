@@ -1,0 +1,262 @@
+/* General Styles */
+
+:root {
+  --bs-primary: #98DAD9;
+  --bs-primary-light: #98DAD9;
+  --bs-secondary: #5B8291;
+  --bs-dark: #04091e;
+  --bs-dark-rgb: 4, 9, 30;
+  --bs-gradient: linear-gradient(
+    to right,
+    var(--bs-primary) 0%,
+    var(--bs-secondary) 100%
+  );
+  --bs-link-hover-color: var(--bs-primary);
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  background-image: url("/img/bg.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 700px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+#quotes{
+  height: 500px;
+  padding: 50px;
+  margin: 10px;
+}
+
+i{
+  padding: 10px;
+  margin: 5px;
+
+
+}
+
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utility Classes */
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.transition-colors {
+  transition: color 150ms, background-color 150ms;
+}
+
+.text-black-50-dark {
+  color: #777777;
+}
+
+.lh-lg {
+  line-height: 1.65 !important;
+}
+
+.bg-primary-light {
+  background-color: var(--bs-primary-light);
+}
+
+.text-primary-light {
+  color: var(--bs-primary-light);
+}
+
+.hide {
+  width: 0;
+  padding: 0;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+/* Components */
+
+.btn {
+  --bs-btn-border-width: 0;
+  --bs-btn-border-radius: 0;
+  --bs-btn-padding-x: 1.5rem;
+  --bs-btn-padding-y: 0.5rem;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-gradient);
+  background: var(--bs-btn-bg);
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 20px 20px 0 rgba(132, 210, 255, 0.3);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  /* font-weight: 500; */
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  color: #5B8291;
+}
+
+.section-title-sm {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.form-control {
+  border-radius: 0;
+  font-size: 0.875rem;
+  font-weight: 300;
+  padding: 0.5rem 1rem;
+}
+
+.input-group-text {
+  border-radius: 0;
+  padding: 0.5rem 1.2rem;
+}
+
+
+
+/* Navbar */
+
+.navbar {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #EAEBED;
+}
+
+.navbar-nav {
+  --bs-navbar-color: var(--bs-black);
+  --bs-navbar-hover-color: var(--bs-primary);
+  --bs-navbar-active-color: var(--bs-primary);
+  --bs-navbar-padding-y: 1.5rem;
+  --bs-nav-link-font-size: 0.75rem;
+}
+
+.offcanvas {
+  --bs-offcanvas-bg: rgba(0, 0, 0, 0.9);
+}
+
+.offcanvas .navbar-nav {
+  --bs-navbar-color: var(--bs-white);
+}
+
+
+
+/* Services Section */
+
+#services .service h4:hover svg
+ {
+  color: var(--bs-primary);
+}
+
+/* My Projects */
+
+#my-projects .filters-btns .filter-btn {
+  font-size: 12px;
+}
+
+#my-projects .filters-btns .filter-btn.active,
+#my-projects .filters-btns .filter-btn:hover {
+  color: var(--bs-primary);
+}
+
+#my-projects .filters-btns .filter-btn::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--bs-dark);
+  transition: width 300ms;
+}
+
+#my-projects .filters-btns .filter-btn:hover::after {
+  width: 60%;
+}
+
+#my-projects #projects .project-card {
+  transition: all 500ms;
+  overflow: hidden;
+}
+
+#my-projects #projects .img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bs-gradient);
+  opacity: 0;
+  border-radius: 5px;
+  transition: opacity 250ms;
+}
+
+#my-projects #projects .project-card:hover .img-overlay {
+  opacity: 0.7;
+}
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+#services {
+  background: #f7f7f7;
+  margin-top: 100px;
+  
+}
+.animIcon:hover{
+  transform: scale(1.05);
+  z-index: 2; 
+  cursor: pointer;
+  display: block;
+
+}
+.animIcon:hover a{
+  transform: scale(1.05);
+  z-index: 2; 
+  cursor: pointer;
+  display: block;
+  color: #98DAD9 ;
+
+}
+.animIcon i{
+  color: #5B8291;
+
+}
+
+.inp{
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  font-size: 13px!important;
+  display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out , box-shadow .15s ease-in-out;
+}
+

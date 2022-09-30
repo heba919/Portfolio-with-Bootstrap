@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallary</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- -->
+    <link rel="stylesheet" href="css/vendor/all.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/Stylee.css" />
+
+
+    <script src="https://kit.fontawesome.com/e8b2e6d96d.js" crossorigin="anonymous"></script>
+    
+  </head>
+
+
+  <body>
+    <section class="offcanvas offcanvas-start" tabindex="-1" id="mobile-nav">
+        <ul class="navbar-nav gap-3 p-5 overflow-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link fw-semibold text-uppercase active"
+              aria-current="page"
+              href="Home.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-uppercase" href="Gallary.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-uppercase" href="About.html">About us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-uppercase" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </section>
+  
+      <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="https://i.pinimg.com/236x/47/70/e2/4770e2b910044c0d55f42fcc0187141d.jpg" alt="logo" width="50px" height="50px" 
+            style="border-radius: 50%;  margin: 10px"/>
+          </a>
+  
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobile-nav"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav ms-auto gap-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-semibold text-uppercase active"
+                  aria-current="page"
+                  href="Home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold text-uppercase" href="About.html"
+                  >About us</a
+                >
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link fw-semibold text-uppercase" href="Gallary.html"
+                  >Gallery</a
+                >
+              </li>
+              
+              
+              <li class="nav-item">
+                <a class="nav-link fw-semibold text-uppercase" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+             <!-- My Projects -->
+             <section id="my-projects" class="section text-center">
+              <div class="container vstack gap-5">
+                
+                <div class="col-9 mx-auto">
+                  <h2 class="section-title">My Gallery</h2>
+                  <p class="text-sm text-black-50">
+                   All my  project is here, hope you like it.                 </p>
+                </div>
+      
+                <!-- Filters Buttons -->
+                <ul
+                  class="list-unstyled filters-btns hstack gap-1 justify-content-center d-none d-md-flex"
+                >
+                  <li>
+                    <button
+                      data-filter="all"
+                      class="text-uppercase filter-btn btn text-sm fw-semibold active"
+                    >
+                      all
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      data-filter="web"
+                      class="text-uppercase filter-btn btn text-sm fw-semibold"
+                    >
+                      Web
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      data-filter="mobile"
+                      class="text-uppercase filter-btn btn text-sm fw-semibold"
+                    >
+                      mobile
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      data-filter="ui_ux"
+                      class="text-uppercase filter-btn btn text-sm fw-semibold"
+                    >
+                      ui/ux
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      data-filter="graphic"
+                      class="text-uppercase filter-btn btn text-sm fw-semibold"
+                    >
+                    graphic
+                    </button>
+                  </li>
+                </ul>
+      
+                <!-- Filter Buttons - Mobile -->
+                <div class="dropdown d-md-none">
+                  <button
+                    class="btn btn-primary dropdown-toggle col-6"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Filters
+                  </button>
+                  <ul class="dropdown-menu col-6">
+                    <li>
+                      <button
+                        data-filter="all"
+                        class="text-uppercase filter-btn btn text-sm fw-semibold active"
+                      >
+                        all
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        data-filter="web"
+                        class="text-uppercase filter-btn btn text-sm fw-semibold"
+                      >
+                        web
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        data-filter="mobile"
+                        class="text-uppercase filter-btn btn text-sm fw-semibold"
+                      >
+                        mobile
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        data-filter="ui_ux"
+                        class="text-uppercase filter-btn btn text-sm fw-semibold"
+                      >
+                        ui/ux
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        data-filter="graphic"
+                        class="text-uppercase filter-btn btn text-sm fw-semibold"
+                      >
+                        graphic
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+      
+                <!-- Projects -->
+                <section id="projects">
+
+                  <div class="row row-cols-1 row-cols-md-3 gy-4 gx-md-4">
+  
+
+                    <!-- Projrct No1 -->
+                    <div class="col project-card" data-cat="mobile">
+                      <article class="vstack gap-3">
+                        <section class="position-relative">
+                          <div
+                            class="img-overlay d-flex align-items-center justify-content-center"
+                          >
+                            <a href="https://github.com/heba919/iti-flutter-Final-Project" class="d-block">
+                              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                            </a>
+                          </div>
+                          <img style="height: 300px ;" src="img/mob1.png" alt="01" />
+                        </section>
+                        <h5 class="text-capitalize m-0 fw-semibold whitespace-nowrap">
+                          Music App
+                        </h5>
+                        <h6
+                          class="text-sm text-black-50 fw-normal m-0 whitespace-nowrap"
+                        >
+                          With Flutter
+                        </h6>
+                      </article>
+                    </div>
+
+                    <!-- Projrct No2 -->
+                    <div class="col project-card" data-cat="web">
+                      <article class="vstack gap-3">
+                        <section class="position-relative">
+                          <div
+                            class="img-overlay d-flex align-items-center justify-content-center"
+                          >
+                            <a href="#" class="d-block">
+                              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                            </a>
+                          </div>
+                          <img src="img/web 1.png" alt="01" />
+                        </section>
+                        <h5 class="text-capitalize m-0 fw-semibold whitespace-nowrap">
+                          Protfolio
+                        </h5>
+                        <h6
+                          class="text-sm text-black-50 fw-normal m-0 whitespace-nowrap"
+                        >
+                          Website
+                        </h6>
+                      </article>
+                    </div>
+
+                    <!-- Projrct No3 -->
+                    <div class="col project-card" data-cat="web">
+                      <article class="vstack gap-3">
+                        <section class="position-relative">
+                          <div
+                            class="img-overlay d-flex align-items-center justify-content-center"
+                          >
+                            <a href="#" class="d-block">
+                              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                            </a>
+                          </div>
+                          <img src="img/web2.png" alt="01" />
+                        </section>
+                        <h5 class="text-capitalize m-0 fw-semibold whitespace-nowrap">
+                          E-commerce website
+                        </h5>
+                        <h6
+                          class="text-sm text-black-50 fw-normal m-0 whitespace-nowrap"
+                        >
+                          Website
+                        </h6>
+                      </article>
+                    </div>
+
+                    <!-- Projrct No4 -->
+                   <div class="col project-card" data-cat="ui_ux">
+                      <article class="vstack gap-3">
+                        <section class="position-relative">
+                          <div
+                            class="img-overlay d-flex align-items-center justify-content-center"
+                          >
+                            <a href="#" class="d-block">
+                              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                            </a>
+                          </div>
+                          <img src="img/ui2.png" alt="01" />
+                        </section>
+                        <h5 class="text-capitalize m-0 fw-semibold whitespace-nowrap">
+                          Heart Heath application
+                        </h5>
+                        <h6
+                          class="text-sm text-black-50 fw-normal m-0 whitespace-nowrap"
+                        >
+                          By Figma
+                        </h6>
+                      </article>
+                    </div>
+
+                     <!-- Projrct No5 -->
+                    <div class="col project-card" data-cat="ui_ux">
+                      <article class="vstack gap-3">
+                        <section class="position-relative">
+                          <div
+                            class="img-overlay d-flex align-items-center justify-content-center"
+                          >
+                            <a href="https://www.figma.com/file/R4o3VsBcCyybwm9uI5AlRf/Flower-App?node-id=0%3A1" class="d-block">
+                              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                            </a>
+                          </div>
+                          <img style="height: 300px ;" src="img/ui1.png" alt="01" />
+                        </section>
+                        <h5 class="text-capitalize m-0 fw-semibold whitespace-nowrap">
+                          Flower application
+                        </h5>
+                        <h6
+                          class="text-sm text-black-50 fw-normal m-0 whitespace-nowrap"
+                        >
+                          Wireframe By Figma
+                        </h6>
+                      </article>
+                    </div>
+
+                     <!-- Projrct No6 -->
+                    <div class="col project-card" data-cat="graphic">
+                      <article class="vstack gap-3">
+                        <section class="position-relative">
+                          <div
+                            class="img-overlay d-flex align-items-center justify-content-center"
+                          >
+                            <a href="https://www.behance.net/gallery/143367405/Logo-Rose" class="d-block">
+                              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                            </a>
+                          </div>
+                          <img src="img/pic1.png" alt="01" />
+                        </section>
+                        <h5 class="text-capitalize m-0 fw-semibold whitespace-nowrap">
+                          Flower
+                        </h5>
+                        <h6
+                          class="text-sm text-black-50 fw-normal m-0 whitespace-nowrap"
+                        >
+                          Logo
+                        </h6>
+                      </article>
+                    </div>
+
+                    <!-- Projrct No7 -->
+                    <div class="col project-card" data-cat="graphic">
+                      <article class="vstack gap-3">
+                        <section class="position-relative">
+                          <div
+                            class="img-overlay d-flex align-items-center justify-content-center"
+                          >
+                            <a href="https://www.behance.net/gallery/142977773/pinkRabbit" class="d-block">
+                              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                            </a>
+                          </div>
+                          <img src="img/nft1.jpg" alt="01" />
+                        </section>
+                        <h5 class="text-capitalize m-0 fw-semibold whitespace-nowrap">
+                          pinkRabbit
+                        </h5>
+                        <h6
+                          class="text-sm text-black-50 fw-normal m-0 whitespace-nowrap"
+                        >
+                          NFT
+                        </h6>
+                      </article>
+                    </div>
+
+
+                  </div>
+
+                </section>
+              </div>
+            </section>
+
+
+
+
+            
+          <script src="JS/main.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        
+          
+  </body>
+</html>

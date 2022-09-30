@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- -->
+    <link rel="stylesheet" href="css/vendor/all.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/Stylee.css" />
+
+
+    <script src="https://kit.fontawesome.com/e8b2e6d96d.js" crossorigin="anonymous"></script>
+  
+  </head>
+
+
+  <body>
+    <section class="offcanvas offcanvas-start" tabindex="-1" id="mobile-nav">
+        <ul class="navbar-nav gap-3 p-5 overflow-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link fw-semibold text-uppercase active"
+              aria-current="page"
+              href="Home.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-uppercase" href="Gallary.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-uppercase" href="About.html">About us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-uppercase" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </section>
+  
+      <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="https://i.pinimg.com/236x/47/70/e2/4770e2b910044c0d55f42fcc0187141d.jpg" alt="logo" width="50px" height="50px" 
+            style="border-radius: 50%;  margin: 10px"/>
+          </a>
+  
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobile-nav"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav ms-auto gap-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-semibold text-uppercase active"
+                  aria-current="page"
+                  href="Home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold text-uppercase" href="About.html"
+                  >About us</a
+                >
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link fw-semibold text-uppercase" href="Gallary.html"
+                  >Gallery</a
+                >
+              </li>
+              
+              
+              <li class="nav-item">
+                <a class="nav-link fw-semibold text-uppercase" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     
+
+
+
+      <div class=" row align-items-center justify-content-center text-center py-5">
+        <div style=" text-align: center;" class="col-9 ">
+          <h2 class="section-title">Contact US</h2>
+          <p class="text-sm text-black-50">
+            Contact us for  more info, help or to join the team
+          </p>
+        </div>
+      </div>
+
+          <!-- form -->
+          
+          <section class="row d-flex align-items-center justify-content-center form">
+            <div class="col-lg-3 d-flex flex-column address-wrap">
+              <div class="single-contact-address d-flex flex-row">
+              <div class="icon">
+                <i class="fa-solid fa-house fa-xl"></i>
+              </div>
+              <div class="contact-details">
+              <h5 class ="text-sm text-black-50" class ="text-sm text-black-50" >Egypt</h5>
+              <p class ="text-sm text-black-50">
+              AL-Qalyubia ,Banhaa
+              </p>
+              </div>
+              </div>
+              <div class="single-contact-address d-flex flex-row">
+              <div class="icon">
+                <i class="fa-solid fa-phone fa-xl"></i>
+              </div>
+              <div class="contact-details">
+              <h5 class ="text-sm text-black-50">+20 120 121 6523</h5>
+              <p  class ="text-sm text-black-50"> Available from 9am to 6pm</p>
+              </div>
+              </div>
+              <div class="single-contact-address d-flex flex-row">
+              <div class="icon">
+                <i class="fa-solid fa-envelope fa-xl"></i>
+              </div>
+              <div class="contact-details">
+              <h5 class ="text-sm text-black-50">waledheba@gmail.com</h5>
+              <p class ="text-sm text-black-50">Send us anytime!</p>
+              </div>
+              </div>
+              </div>
+              
+  
+  
+  
+              <!-- Send me  -->
+  
+              <div class="col-lg-8">
+                <form class="text-right" action="" method="post">
+                <div class="row">
+                <div class="col-lg-6 ">
+                <input class="inp" name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class=" mb-20" required="" type="text">
+                <input class="inp" name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class=" mb-20 " required="" type="email">
+                <input class="inp" name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="mb-20 " required="" type="text">
+                </div>
+                <div class="col-lg-6">
+                <textarea style="height: 148px;" class="inp" name="message" placeholder="Enter Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'" required=""></textarea>
+                </div>
+                <div class="col-lg-12">
+                   <button class="btn btn-primary" style="float: right;">Send Message</button>
+                </div>
+                </div>
+                </form>
+                </div>
+  
+              </section>
+
+<footer class=" align-items-center justify-content-center text-center ">
+  
+    <div class="social-links ">
+
+        <a href="https://www.linkedin.com/in/heba-waleed-5263911ba/" >
+          <i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter "></i></a>
+        <a href="#" ><i class="fa-brands fa-facebook  "></i></a>
+        <a href="#" ><i class="fa-brands fa-instagram "></i></a>
+      </div>
+ 
+</footer>
+
+
+
+
+  </body>
+</html>
